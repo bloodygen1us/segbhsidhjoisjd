@@ -1,0 +1,64 @@
+a 
+
+:root{
+  --bg: #f6f7f8; 
+  --panel: #ffffff; 
+  --muted: #6b7280; 
+  --accent: #3b82f6; 
+  --text: #0f1724; 
+  --border: #e6e9ef; 
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  margin:0;padding:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:28px}
+
+
+nav.site-nav{background:var(--panel);border-bottom:1px solid var(--border)}
+nav.site-nav .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:12px 20px}
+nav .brand{color:var(--text);font-weight:700;text-decoration:none}
+nav .nav-links{list-style:none;margin:0;padding:0;display:flex;gap:14px}
+nav .nav-links a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+nav .nav-links a:hover{color:var(--text);background:rgba(15,23,36,0.04)}
+
+
+h1,h2,h3,h4,h5,h6{margin:8px 0;color:var(--text);font-weight:600}
+h1{font-size:2rem}
+h3{font-size:1.2rem}
+
+
+.card{background:var(--panel);padding:18px;border-radius:10px;border:1px solid var(--border);margin-bottom:16px}
+.lead{color:var(--muted);font-size:1rem}
+
+
+.table{width:100%;border-collapse:collapse;margin:12px 0}
+.table th,.table td{padding:10px;border:1px solid var(--border);color:var(--text);background:transparent}
+.table th{background:#f0f2f4;color:var(--text);font-weight:600}
+
+
+.btn{display:inline-block;padding:8px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;border:none}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn:hover{opacity:0.95}
+
+
+img{max-width:100%;height:auto;border-radius:8px;display:block}
+
+.text-muted{color:var(--muted)}
+.small{font-size:.85rem;color:var(--muted)}
+ul,ol{color:var(--text);margin:12px 0 12px 24px}
+
+a,button,.btn,nav .nav-links a{transition:all .15s ease}
+
+
+.navbar{background:var(--panel) !important;border-bottom:1px solid var(--border) !important}
+.navbar .navbar-brand{color:var(--text) !important}
+.navbar .nav-link{color:var(--muted) !important}
+.navbar .nav-link.active{color:var(--text) !important;font-weight:600}
+.btn.btn-gradient{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#fff}
